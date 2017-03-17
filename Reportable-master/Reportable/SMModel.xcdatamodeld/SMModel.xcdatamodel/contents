@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Foil" representedClassName="Foil" syncable="YES">
+        <attribute name="que1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que7" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Tags" inverseName="foil" inverseEntity="Tags" syncable="YES"/>
+    </entity>
+    <entity name="Points" representedClassName="Points" syncable="YES">
+        <attribute name="que1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que14" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que15" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que16" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tags" inverseName="points" inverseEntity="Tags" syncable="YES"/>
+    </entity>
+    <entity name="Sabre" representedClassName="Sabre" syncable="YES">
+        <attribute name="que1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="que7" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Tags" inverseName="sabre" inverseEntity="Tags" syncable="YES"/>
+    </entity>
+    <entity name="Tags" representedClassName="Tags" syncable="YES">
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="copyright" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dateTaken" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pointType" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="thumbData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uploadStatus" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="foil" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Foil" inverseName="tag" inverseEntity="Foil" syncable="YES"/>
+        <relationship name="points" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Points" inverseName="tag" inverseEntity="Points" syncable="YES"/>
+        <relationship name="sabre" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sabre" inverseName="tag" inverseEntity="Sabre" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Foil" positionX="-4079" positionY="-243" width="128" height="163"/>
+        <element name="Points" positionX="-4079" positionY="-54" width="128" height="298"/>
+        <element name="Sabre" positionX="-4077" positionY="-423" width="128" height="163"/>
+        <element name="Tags" positionX="-4329" positionY="-351" width="144" height="268"/>
+    </elements>
+</model>

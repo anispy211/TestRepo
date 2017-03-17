@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PointsDetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ghU-F9-ufk"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEa-7V-uaJ">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="bhI-Y6-Yxl"/>
+                    </constraints>
+                </view>
+                <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="ajn-Qx-LUf" customClass="SMNavigationBar">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="28w-Ua-nu9"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="gcd-aJ-ETX"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="INFO" id="OCu-PL-nl6">
+                            <barButtonItem key="leftBarButtonItem" width="17" id="6Gn-0O-0gR">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="emJ-ar-F2F">
+                                    <rect key="frame" x="16" y="6" width="61" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="BACK" backgroundImage="Btn_02.png">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Done" width="61" id="mkp-Ms-BSV">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2CK-EA-c2z">
+                                    <rect key="frame" x="297" y="6" width="62" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                    <state key="normal" title="SAVE" backgroundImage="Btn_01.png">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H3g-Jz-xnQ">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xEa-7V-uaJ" secondAttribute="trailing" id="2gC-k7-eT8"/>
+                <constraint firstItem="ghU-F9-ufk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="45R-pR-ZfO"/>
+                <constraint firstItem="xEa-7V-uaJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="63E-Gq-SeQ"/>
+                <constraint firstItem="H3g-Jz-xnQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BXz-C2-GBu"/>
+                <constraint firstItem="ajn-Qx-LUf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IXw-9k-UPl"/>
+                <constraint firstAttribute="trailing" secondItem="ajn-Qx-LUf" secondAttribute="trailing" id="ImS-98-ZDX"/>
+                <constraint firstAttribute="trailing" secondItem="ghU-F9-ufk" secondAttribute="trailing" id="Oeq-8g-JGD"/>
+                <constraint firstItem="ghU-F9-ufk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ug0-a4-1m1"/>
+                <constraint firstAttribute="bottom" secondItem="H3g-Jz-xnQ" secondAttribute="bottom" id="iel-Yp-ZWT"/>
+                <constraint firstItem="ajn-Qx-LUf" firstAttribute="top" secondItem="xEa-7V-uaJ" secondAttribute="bottom" id="l1A-ua-nHG"/>
+                <constraint firstItem="xEa-7V-uaJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="phY-tf-DGp"/>
+                <constraint firstAttribute="trailing" secondItem="H3g-Jz-xnQ" secondAttribute="trailing" id="sWb-yD-YZO"/>
+                <constraint firstItem="H3g-Jz-xnQ" firstAttribute="top" secondItem="ajn-Qx-LUf" secondAttribute="bottom" id="xs4-dZ-QOf"/>
+                <constraint firstAttribute="bottom" secondItem="ghU-F9-ufk" secondAttribute="bottom" id="zLo-IR-BPW"/>
+            </constraints>
+            <point key="canvasLocation" x="42.5" y="152.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Btn_01.png" width="120" height="58"/>
+        <image name="Btn_02.png" width="120" height="58"/>
+        <image name="background.png" width="640" height="1136"/>
+    </resources>
+</document>

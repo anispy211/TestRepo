@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2401E4753EC0DE8345E2903AA1F17CE90B0864A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0EE877EE82C905055FEB925F3223B97DB39CDD9F" : 9223372036854775807,
+    "2401E4753EC0DE8345E2903AA1F17CE90B0864A2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D1426DDB-5A7D-4F2D-952A-04C4B39ACF10",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0EE877EE82C905055FEB925F3223B97DB39CDD9F" : "..\/Documents\/Personal\/Code\/Bitbucket\/Fencing\/FencingApp",
+    "2401E4753EC0DE8345E2903AA1F17CE90B0864A2" : "Reportable-master\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Reportable",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Reportable.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anispy211\/FencingPrototype.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0EE877EE82C905055FEB925F3223B97DB39CDD9F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/anispy211\/FencingApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2401E4753EC0DE8345E2903AA1F17CE90B0864A2"
+    }
+  ]
+}

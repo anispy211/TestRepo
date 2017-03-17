@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraOverLayViewController">
+            <connections>
+                <outlet property="bgsemitranperentView1" destination="scl-ro-s7B" id="Tfg-te-Nqs"/>
+                <outlet property="bgsemitranperentView2" destination="SEn-4x-Yux" id="D0h-Db-Os4"/>
+                <outlet property="btnCamera" destination="oGK-nH-pRw" id="v5X-D3-Mfg"/>
+                <outlet property="btnCancel" destination="mNc-qk-F5Y" id="NL8-p5-fZi"/>
+                <outlet property="btnVideo" destination="Yww-Ff-yMb" id="SVs-B1-Xwj"/>
+                <outlet property="btnlastImage" destination="ir2-jl-5BK" id="Y15-dT-vJK"/>
+                <outlet property="flashButton" destination="Tj2-tU-1kP" id="Lft-Oc-gHW"/>
+                <outlet property="flipButton" destination="Vqj-2R-m7N" id="DO8-jG-s5j"/>
+                <outlet property="gesSwipeLeft" destination="idu-0D-6R3" id="AZS-wU-aZT"/>
+                <outlet property="gesSwipeRight" destination="xt6-uZ-YfF" id="F3K-8u-8cY"/>
+                <outlet property="indicatorLbl" destination="JF4-uj-4CK" id="es6-zj-Bk5"/>
+                <outlet property="mainCameraBtn" destination="oYz-gC-iLw" id="SEa-Eb-Nnx"/>
+                <outlet property="modeScrollView" destination="dq9-Qz-hKR" id="a4X-kT-bWb"/>
+                <outlet property="redIndicatorLbl" destination="jOX-eV-cZJ" id="sMA-sj-ZAM"/>
+                <outlet property="svCameraMode" destination="dq9-Qz-hKR" id="ZeQ-JZ-TMo"/>
+                <outlet property="timeLable" destination="30e-j6-8bk" id="uuj-7f-nJT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAVContainer" destination="bbM-Mz-B6I" id="elH-On-FMt"/>
+                <outletCollection property="allButtonsArray" destination="mNc-qk-F5Y" id="5RY-MV-Ygj"/>
+                <outletCollection property="allButtonsArray" destination="oYz-gC-iLw" id="SUa-KD-cMF"/>
+                <outletCollection property="allButtonsArray" destination="Yww-Ff-yMb" id="oFH-1t-Yua"/>
+                <outletCollection property="allButtonsArray" destination="oGK-nH-pRw" id="Dx7-LH-fgw"/>
+                <outletCollection property="allButtonsArray" destination="ir2-jl-5BK" id="ch5-vl-Hql"/>
+                <outletCollection property="allButtonsArray" destination="Tj2-tU-1kP" id="a3S-GD-JvH"/>
+                <outletCollection property="allButtonsArray" destination="7rL-sU-ttH" id="v5D-sb-uoa"/>
+                <outletCollection property="allButtonsArray" destination="Vqj-2R-m7N" id="ArC-ne-hOb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" id="SEn-4x-Yux">
+                    <rect key="frame" x="0.0" y="468" width="320" height="109"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mNc-qk-F5Y">
+                    <rect key="frame" x="20" y="513" width="65" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="CANCEL" backgroundImage="Btn_02.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="Btn_02_Highlighted.png"/>
+                    <connections>
+                        <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="qw5-oU-FBE"/>
+                    </connections>
+                </button>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="dq9-Qz-hKR">
+                    <rect key="frame" x="0.0" y="468" width="320" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yww-Ff-yMb">
+                            <rect key="frame" x="66" y="7" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
+                            <state key="normal" title="V I D E O">
+                                <color key="titleColor" red="1" green="0.80000007152557373" blue="0.22352942824363708" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oGK-nH-pRw">
+                            <rect key="frame" x="130" y="7" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
+                            <state key="normal" title="P H O T O">
+                                <color key="titleColor" red="0.98823535442352295" green="0.79607850313186646" blue="0.22352942824363708" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="·" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JF4-uj-4CK">
+                    <rect key="frame" x="145" y="465" width="31" height="17"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                    <color key="textColor" red="1" green="0.78039222955703735" blue="0.22352942824363708" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="bbM-Mz-B6I">
+                    <rect key="frame" x="0.0" y="2" width="320" height="500"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view alpha="0.20000000000000001" contentMode="scaleToFill" id="scl-ro-s7B">
+                            <rect key="frame" x="0.0" y="-6" width="320" height="41"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="idu-0D-6R3" appends="YES" id="OQe-kL-HXY"/>
+                        <outletCollection property="gestureRecognizers" destination="xt6-uZ-YfF" appends="YES" id="39f-Qd-2Xs"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oYz-gC-iLw">
+                    <rect key="frame" x="128" y="500" width="65" height="65"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="photoTakeBtn.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="camerabuttonAction:" destination="-1" eventType="touchUpInside" id="J4I-k7-Wky"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ir2-jl-5BK">
+                    <rect key="frame" x="251" y="508" width="50" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showLibrary:" destination="-1" eventType="touchUpInside" id="NEY-I9-g6F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Vqj-2R-m7N">
+                    <rect key="frame" x="278" y="8" width="29" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="CameraRotate.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="camerFlipButton:" destination="-1" eventType="touchUpInside" id="xtt-Db-TYR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Tj2-tU-1kP">
+                    <rect key="frame" x="6" y="9" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <state key="normal" image="flash-off.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="flash-auto.png"/>
+                    <connections>
+                        <action selector="flashButtonAction:" destination="-1" eventType="touchUpInside" id="rsj-Cs-TH7"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 / 01:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30e-j6-8bk">
+                    <rect key="frame" x="90" y="10" width="144" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7rL-sU-ttH">
+                    <rect key="frame" x="129" y="5" width="57" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="HDR Off">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="HDR On"/>
+                </button>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="·" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jOX-eV-cZJ">
+                    <rect key="frame" x="83" y="9" width="16" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <swipeGestureRecognizer direction="left" id="idu-0D-6R3">
+            <connections>
+                <action selector="setModeToCamera" destination="-1" id="aqV-WU-cvH"/>
+                <outlet property="delegate" destination="-1" id="jLP-zC-Bb0"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="right" id="xt6-uZ-YfF">
+            <connections>
+                <action selector="setModeToVideo" destination="-1" id="mgK-gV-Rfo"/>
+                <outlet property="delegate" destination="-1" id="3xO-Ll-IUy"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Btn_02.png" width="120" height="58"/>
+        <image name="Btn_02_Highlighted.png" width="120" height="58"/>
+        <image name="CameraRotate.png" width="54" height="42"/>
+        <image name="flash-auto.png" width="78" height="40"/>
+        <image name="flash-off.png" width="78" height="40"/>
+        <image name="photoTakeBtn.png" width="135" height="135"/>
+    </resources>
+</document>
